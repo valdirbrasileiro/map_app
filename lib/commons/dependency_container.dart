@@ -14,7 +14,6 @@ class DependencyContainer {
   DependencyContainer._internal();
 
   // Instâncias que você quer utilizar em seu projeto
-  // final LocationService locationService = LocationService();
   final ConnectionStore connectionStore = ConnectionStore(
       connectionRepository: ConnectionRepository(client: HttpClient()));
   final LocationStore locationStore = LocationStore(
